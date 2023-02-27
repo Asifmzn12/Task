@@ -39,7 +39,15 @@ app.post("/product",async(req,resp)=>{
 })
 app.get("/",async(req,res)=>{
     try{
-        const data = await products.find()
+        const data = await products.aggregate
+        ([
+
+            {$lookup:{ from:"category", localField:' Catogory_id', 
+              foreignField:'category_id',as:'category'}},
+              { $unwind:category }
+
+
+        ])
         res.send(data)
         console.log(data);
     }
