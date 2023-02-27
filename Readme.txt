@@ -1,14 +1,15 @@
 Download the zip file of code 
-//Requirements
+Requirements
  Vs code            https://nodejs.org/en/download/
  MongoDb Compass    https://www.mongodb.com/try/download/compass
  postman             https://www.postman.com/downloads/
 
 
 
- //Now Extract the zip file of code in vs code
- // run npm install for node module file and dependencies
- // perform curd operation according to need
+ Now Extract the zip file of code 
+ open this file in vs code
+  run npm install for node module file and dependencies
+  perform curd operation according to need
 
 
  get  : To  get the data from the database
